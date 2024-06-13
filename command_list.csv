@@ -1,0 +1,31 @@
+    1  git config --global user.name "Valentine Khaychevsky"
+    2  git config --global user.email valik.khaychevsky@gmail.com
+    3  git config --get user.name
+    4  git config --get user.email
+    5  git clone https://github.com/Khaychevsky/HW_10.git
+    6  ls -l
+    7  cd HW_10
+    8  touch text_ignore.txt
+    9  cd /d/goit/HW_10/.gitignore
+   10  nano .gitignore
+   11  vim .gitignore
+   12  git status
+   13  git add .
+   14  git status
+   15  git commit -m "Added text_ignore.txt to .gitignore"
+   16  touch main_test.txt
+   17  git add .
+   18  git commit -m "Added empty file main_test.txt"
+   19  git branch develop
+   20  git checkout develop
+   21  touch develop_test.txt
+   22  git add .
+   23  git commit -m "Added empty file develop_test.txt"
+   24  echo "changes1" >> develop_test.txt
+   25  git status
+   26  git add .
+   27  git commit -m "Updated develop_test.txt with changes1"
+   28  git checkout main
+   29  git merge develop
+   30  git log
+   31  history > command_list.csv
